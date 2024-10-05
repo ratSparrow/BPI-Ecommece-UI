@@ -1,0 +1,92 @@
+[
+    {
+      "id": 1,
+      "name": "Wireless Mouse",
+      "brand": "Logitech",
+      "price": 25.99,
+      "description": "Ergonomic wireless mouse with long battery life and adjustable DPI.",
+      "review": "Great for office work and light gaming, comfortable to use for long hours.",
+      "availability": "In Stock"
+    },
+    {
+      "id": 2,
+      "name": "4K Monitor",
+      "brand": "Samsung",
+      "price": 299.99,
+      "description": "Ultra HD 27-inch monitor with 4K resolution, 60Hz refresh rate, and HDMI support.",
+      "review": "Excellent picture quality and color accuracy, perfect for graphic design and video editing.",
+      "availability": "Limited Stock"
+    },
+    {
+      "id": 3,
+      "name": "Gaming Keyboard",
+      "brand": "Razer",
+      "price": 129.99,
+      "description": "Mechanical RGB gaming keyboard with customizable lighting and macro keys.",
+      "review": "Responsive keys and vibrant RGB effects, great for gaming enthusiasts.",
+      "availability": "Out of Stock"
+    },
+    {
+      "id": 4,
+      "name": "External SSD",
+      "brand": "SanDisk",
+      "price": 89.99,
+      "description": "Portable 500GB external SSD with USB-C support, up to 1050MB/s read speed.",
+      "review": "Super fast and reliable, a must-have for quick backups and transfers.",
+      "availability": "In Stock"
+    },
+    {
+      "id": 5,
+      "name": "Noise Cancelling Headphones",
+      "brand": "Sony",
+      "price": 199.99,
+      "description": "Wireless over-ear headphones with active noise cancellation and 30-hour battery life.",
+      "review": "Outstanding sound quality and noise isolation, perfect for travel and work.",
+      "availability": "In Stock"
+    },
+    {
+      "id": 6,
+      "name": "Smartphone",
+      "brand": "Apple",
+      "price": 999.99,
+      "description": "iPhone 13 Pro with 6.1-inch Super Retina XDR display, A15 Bionic chip, and 5G support.",
+      "review": "Smooth performance and excellent camera quality, but a bit pricey.",
+      "availability": "In Stock"
+    },
+    {
+      "id": 7,
+      "name": "Bluetooth Speaker",
+      "brand": "JBL",
+      "price": 59.99,
+      "description": "Portable Bluetooth speaker with powerful sound and waterproof design.",
+      "review": "Great sound quality for its size, perfect for outdoor use.",
+      "availability": "In Stock"
+    },
+    {
+      "id": 8,
+      "name": "Fitness Tracker",
+      "brand": "Fitbit",
+      "price": 129.99,
+      "description": "Health and fitness smartwatch with heart rate monitoring and GPS.",
+      "review": "Accurate tracking with a wide range of features, battery life could be better.",
+      "availability": "Limited Stock"
+    },
+    {
+      "id": 9,
+      "name": "Laptop Stand",
+      "brand": "Nulaxy",
+      "price": 29.99,
+      "description": "Adjustable aluminum laptop stand with ergonomic design for better posture.",
+      "review": "Sturdy and well-built, helps reduce neck strain while working.",
+      "availability": "In Stock"
+    },
+    {
+      "id": 10,
+      "name": "Smartwatch",
+      "brand": "Samsung",
+      "price": 249.99,
+      "description": "Galaxy Watch 4 with fitness tracking, ECG monitoring, and sleep analysis.",
+      "review": "Sleek design and full of features, integrates well with Android devices.",
+      "availability": "Out of Stock"
+    }
+  ]
