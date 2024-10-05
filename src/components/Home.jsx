@@ -1,27 +1,24 @@
 import React, { useState } from 'react'
 import Users from './Users'
+import Products from './Products'
 
 export default function Home() {
-    const [value, setValue] = useState(10)
-    const handleIncrease = ()=>{
+    const [value,setValue] = useState(100)
+    const handleIncrease =() =>{
         setValue(value+1)
     }
-    const handleDecrease = ()=>{
+    const handleDecrease =() =>{
         setValue(value-1)
     }
   return (
     <div>
-      <h1 className='text-7xl'>This is home component</h1>
-      <h2 className='text-3xl mt-6'>
-        Ami number {value}   
-      </h2>
-      <div className='mt-4'>
-      <button onClick={handleIncrease} className='btn btn-primary text-white'>Increase</button>
-      <button onClick={handleDecrease} className='btn btn-secondary ml-8 text-white'>Decrease</button>
+      <h1 className='text-4xl my-8 text-center'>I have a number, That is {value}</h1>
+      <div className='text-center'>
+        <button onClick={handleIncrease} className='btn btn-primary text-white'>Increase</button>
+        <button onClick={handleDecrease} className='btn btn-secondary text-white ml-4'>Decrease</button>
       </div>
-
-      
       <Users></Users>
+     
     </div>
   )
 }

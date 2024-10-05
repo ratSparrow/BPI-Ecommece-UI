@@ -1,10 +1,13 @@
 import React from 'react'
 
-export default function Header() {
+export default function Header(props) {
+  console.log(props.logo)
+  
+  const {value, logo} = props
   return (
      <div className="navbar bg-amber-400">
      <div className="flex-1">
-       <a className="btn btn-ghost text-xl">daisyUI</a>
+       <a className="btn btn-ghost text-xl">{logo}</a>
      </div>
      <div className="flex-none">
        <div className="dropdown dropdown-end">
@@ -29,7 +32,7 @@ export default function Header() {
            tabIndex={0}
            className="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow">
            <div className="card-body">
-             <span className="text-lg font-bold">8 Items</span>
+             <span className="text-lg font-bold">{value} Items</span>
              <span className="text-info">Subtotal: $999</span>
              <div className="card-actions">
                <button className="btn btn-primary btn-block">View cart</button>
