@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 
 export default function Products(props) {
   const {handleAddToCart} = props
-  console.log(props)
+  // console.log(props)
   const [products, setProducts] = useState([])
   useEffect(()=>{
     fetch("./products.JSON")
@@ -10,7 +10,7 @@ export default function Products(props) {
     .then(data=>setProducts(data))
   },[])
 
-  console.log(products)
+  // console.log(products)
 
 
 

@@ -17,7 +17,7 @@ export default function Home() {
         <button onClick={handleIncrease} className='btn btn-primary text-white'>Increase</button>
         <button onClick={handleDecrease} className='btn btn-secondary text-white ml-4'>Decrease</button>
       </div>
-      <Users></Users>
+      
      
     </div>
   )
