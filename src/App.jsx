@@ -10,29 +10,27 @@ import Users from "./components/Users"
 import toast from "react-hot-toast"
 
 function App() {
-  let [cart,setCart] = useState([])
+  const [cart,setCart] = useState([])
   const handleChangeInput = e =>{
     console.log(e.target.value)
   }
-  const handleAddToCart = (item)=>{
-    console.log(cart)
-    const newCart = [...cart, item] 
-    toast.success('Successfully added to cart!')
-    setCart(newCart)
-    
-  }
-  console.log(cart)
 
+  const handleAddToCart = (item)=>{
+    const newCart = [...cart,item]
+    setCart(newCart)
+    toast.success('Successfully added product to cart!')
+    console.log(newCart)
+  }
 
   const logo = "M. Rafiul Alam"
   return (
     <>
-      <Header logo={logo} cart={cart}></Header>
+      <Header cart={cart}></Header>
       <Carousel></Carousel>
       <Home></Home>
       <Products handleAddToCart={handleAddToCart}></Products>
       <Users/>
-      <Cart ></Cart>
+      <Cart cart={cart}></Cart>
 
       <div className="mt-12">
         <input
