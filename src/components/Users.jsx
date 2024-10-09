@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Users() {
 
@@ -25,7 +26,9 @@ useEffect(()=>{
               <p>{user.phone}</p>
               <p>{user.website}</p>
               <div className="card-actions justify-end">
+                <Link to="/contact">
                 <button className="btn btn-primary text-white">Contact Now</button>
+                </Link>
               </div>
             </div>
           </div>)

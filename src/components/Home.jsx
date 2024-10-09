@@ -1,24 +1,35 @@
 import React, { useState } from 'react'
 import Users from './Users'
 import Products from './Products'
+import Cart from './Cart'
+import Header from './Header'
+import Carousel from './Carousel'
+import Footer from './Footer'
 
 export default function Home() {
-    const [value,setValue] = useState(100)
-    const handleIncrease =() =>{
-        setValue(value+1)
-    }
-    const handleDecrease =() =>{
-        setValue(value-1)
-    }
+  const [cart, setCart] = useState([])
+  const handleChangeInput = e => {
+    console.log(e.target.value)
+  }
+
+  const handleAddToCart = (item) => {
+    const newCart = [...cart, item]
+    setCart(newCart)
+    toast.success('Successfully added product to cart!')
+    console.log(newCart)
+  }
+
   return (
     <div>
-      <h1 className='text-4xl my-8 text-center'>I have a number, That is {value}</h1>
-      <div className='text-center'>
-        <button onClick={handleIncrease} className='btn btn-primary text-white'>Increase</button>
-        <button onClick={handleDecrease} className='btn btn-secondary text-white ml-4'>Decrease</button>
-      </div>
+
+
+
+      <Carousel></Carousel>
+      <Products handleAddToCart={handleAddToCart}></Products>
+   
+      <Cart cart={cart}></Cart>
+
       
-     
     </div>
   )
 }
