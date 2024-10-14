@@ -6,6 +6,7 @@ import SignUp from "../components/SignUp";
 import MainLayout from "../layout/MainLayout";
 import About from "../components/About";
 import Users from "../components/Users";
+import ProductDetails from "../components/ProductDetails";
  const routes = createBrowserRouter([
     {
         path:"/",
@@ -27,6 +28,7 @@ import Users from "../components/Users";
                 path:"/users",
                 element:<Users></Users>
             },
+
         ]
     },
     {

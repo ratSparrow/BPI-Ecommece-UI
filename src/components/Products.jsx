@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { Link } from "react-router-dom"
 
 export default function Products(props) {
   const {handleAddToCart} = props
@@ -29,9 +30,11 @@ export default function Products(props) {
           
           <p>{product.brand}</p>
           <p>{product.availability}</p>
+          
           <div className="card-actions justify-end">
             <button onClick={()=>handleAddToCart(product)} className="btn btn-primary text-white">Buy Now</button>
           </div>
+
         </div>
       </div>)
     }
