@@ -28,6 +28,10 @@ import ProductDetails from "../components/ProductDetails";
                 path:"/users",
                 element:<Users></Users>
             },
+            {
+                path:"/details/:id",
+                element:<ProductDetails></ProductDetails>
+            },
 
         ]
     },

@@ -34,7 +34,9 @@ export default function Products(props) {
           <div className="card-actions justify-end">
             <button onClick={()=>handleAddToCart(product)} className="btn btn-primary text-white">Buy Now</button>
           </div>
-
+          <div className="card-actions justify-end">
+            <Link to={`/details/${product.id}`} className="btn btn-primary text-white">Details</Link >
+          </div>
         </div>
       </div>)
     }
